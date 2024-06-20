@@ -188,6 +188,8 @@ class MainFrame(wx.Frame):
             depth_models.append("Any_V2_N")
         if depth_anything_has_model("Any_V2_K"):
             depth_models.append("Any_V2_K")
+        if depth_anything_has_model("Any_V2_G"):
+            depth_models.append("Any_V2_G")
 
         self.cbo_depth_model = wx.ComboBox(self.grp_stereo,
                                            choices=depth_models,
